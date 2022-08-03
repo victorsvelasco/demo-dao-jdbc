@@ -10,6 +10,8 @@ public class Department implements Serializable{
 	private Integer id;
 	private String name;
 	
+	Seller seller;
+	
 	public Department() {	
 	}
 
@@ -34,6 +36,13 @@ public class Department implements Serializable{
 		this.name = name;
 	}
 
+	public Seller getSeller() {
+		return seller;
+	}
+
+	public void setSeller(Seller seller) {
+		this.seller = seller;
+	}
 
 	@Override
 	public int hashCode() {
